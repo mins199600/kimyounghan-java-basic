@@ -1,7 +1,4 @@
-package Soulution01;
-
-import java.sql.Array;
-import java.util.Arrays;
+package solution01;
 
 public class StudentDataHandler {
     /*학생 종보 출력 프로그램 만들기
