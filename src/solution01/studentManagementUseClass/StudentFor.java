@@ -18,7 +18,13 @@ public class StudentFor {
         //배열사용
         StudentInformation[] students = {student1,student2};
         for (int i = 0; i < students.length; i++) {
-            System.out.println("이름 : " + students[i].StudentName + " 나이 : " + students[i].StudentAge + " 성적 : " + students[i].studentGrade);
+            StudentInformation s = students[i];
+            System.out.println("이름 : " + s.StudentName + " 나이 : " + s.StudentAge + " 성적 : " + s.studentGrade);
+        }
+
+        //향상된 for문
+        for (StudentInformation s : students) {
+            System.out.println("이름 : " + s.StudentName + " 나이 : " + s.StudentAge + " 성적 : " + s.studentGrade);
         }
     }
 }
