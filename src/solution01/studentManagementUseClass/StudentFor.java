@@ -1,6 +1,6 @@
 package solution01.studentManagementUseClass;
 
-public class StudentInformationPlay {
+public class StudentFor {
     public static void main(String[] args) {
 
         StudentInformation student1;
@@ -16,12 +16,9 @@ public class StudentInformationPlay {
         student2.studentGrade = "80";
 
         //배열사용
-        StudentInformation[] students = new StudentInformation[2];
-        students[0] = student1;
-        students[1] = student2;
-
-        System.out.println("=========================================");
-        System.out.println("이름 : " + students[0].StudentName + " 나이 : " + students[0].StudentAge + " 성적 : " + students[0].studentGrade);
-        System.out.println("이름 : " + students[1].StudentName + " 나이 : " + students[1].StudentAge + " 성적 : " + students[1].studentGrade);
+        StudentInformation[] students = {student1,student2};
+        for (int i = 0; i < students.length; i++) {
+            System.out.println("이름 : " + students[i].StudentName + " 나이 : " + students[i].StudentAge + " 성적 : " + students[i].studentGrade);
+        }
     }
 }
